@@ -8,7 +8,7 @@
 #page-home{
     height: 100vh;
     background: url('../assets/home-background.svg') no-repeat;
-    background-position: 35vw 20vh;
+    background-position: 45vw 20vh;
 }
 
 #page-home .content{

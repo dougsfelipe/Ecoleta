@@ -9,7 +9,7 @@
     }
 
     #page-home header a{
-        position: absolute;
+        
         bottom: 48px;
         left:50%;
         transform: translateX(-50%);
@@ -20,14 +20,15 @@
     }
 }
 
-@media (min-width: 1700px){
+@media (max-width: 1700px){
     #page-home{
-        background-position-x: 40vh;
+        background-position-x: 55vh;
     }
 }
 
 @media (max-height: 760px){
     #page-home{
-        background-position-y: 200;
+        background-position-y: 200px;
     }
 }
+
