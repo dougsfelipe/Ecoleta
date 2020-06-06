@@ -51,7 +51,7 @@ for(const item of itensdeColeta){
     item.addEventListener("click",handleSelectedItem);
 }
 
-const collecteditens = document.querySelector("input[name=itens]")
+const collecteditens = document.querySelector("input[name=items]")
 
 let selectedItens = [];
 
@@ -62,6 +62,8 @@ function handleSelectedItem(event){
     itemLi.classList.toggle("selected");
 
     const itemID = event.target.dataset.id;
+
+
 
     const alredySelected = selectedItens.findIndex( item => item == itemID)
 
