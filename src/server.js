@@ -3,6 +3,7 @@ const server = express();
 
 const db = require("./database/db");
 
+var PORT = process.env.PORT || 3000;
 
 server.use(express.static("public"));
 
@@ -88,7 +89,7 @@ server.get("/search", (req,res) => {
     })
 })
 
-server.listen(3000);
+server.listen(PORT);
 
 
 

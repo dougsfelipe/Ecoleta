@@ -7,7 +7,11 @@
 }
 
 body{
-    background-color: white;
+    
+    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+    background-color: violet;
+
+
 }
 
 #page-search-results header{
@@ -211,15 +215,3 @@ main img{
     object-fit: cover;
 }
 
-body::after{
-    content: "";
-    position: absolute;
-    background: #f5f5f5;
-    top:0;
-    height: 16rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-
-}
