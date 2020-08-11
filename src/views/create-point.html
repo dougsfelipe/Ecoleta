@@ -18,7 +18,7 @@
 
         {% include "partials/page-header.html" %}
 
-        <form action="/savepoint" method="POST">
+        <form action="/savepoint" method="POST"  onsubmit="handleSubmit(this); return false;" >
             <h1>Cadastro do ponto de coleta</h1>
 
             <fieldset>
@@ -30,11 +30,11 @@
                 <div class="field-group">
                     <div class="field">
                         <label for="">Nome da entidade</label>
-                        <input type="text" name="name" required="required">
+                        <input type="text" name="name" required="required" id="name">
                     </div>
                     <div class="field">
                         <label for="">Imagem da Entidade</label>
-                        <input placeholder="http://" type="url" name="image" required="required">
+                        <input placeholder="http://" type="url" name="image" required="required" id="image">
                     </div>
                 </div>
 
@@ -42,11 +42,11 @@
                     <div class="field">
 
                         <label for="address">Endereço</label>
-                        <input type="text" name="address" required="required">
+                        <input type="text" name="address" required="required" id="address">
                     </div>
                     <div class="field">
                         <label for="address">Número/Complemento</label>
-                        <input type="text" name="address2" required="required">
+                        <input type="text" name="address2" required="required" id="address2">
 
                     </div>
                 </div>
@@ -54,9 +54,8 @@
                 <div class="field-group">
                     <div class="field">
                         <label for="state">Estado</label>
-                        <select name="uf" required="required">
+                        <select name="uf" required="required" id="uf">
                             <option value="">Selecione o Estado</option>
-                            <option value="1">Selecione o Estado</option>
                         </select>
 
                         <input type="hidden" name="state">
@@ -64,7 +63,7 @@
 
                     <div class="field">
                         <label for="state">Cidade</label>
-                        <select name="city" disabled="disabled" required="required">
+                        <select name="city" disabled="disabled" required="required" id="city">
                             <option value="">Selecione a Cidade</option>
                         </select>
                     </div>
@@ -115,7 +114,7 @@
 
             </fieldset>
 
-            <button type="submit">
+            <button type="submit" id="send">
                 Cadastrar ponto de coleta</button>
 
         </form>

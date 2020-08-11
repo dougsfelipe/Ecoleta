@@ -8,10 +8,13 @@
 
 body{
     
-    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
-    background-color: violet;
+    background-color: #f0f0f5;
 
 
+}
+
+header{
+    margin-bottom: 50px;
 }
 
 #page-search-results header{
