@@ -12,5 +12,5 @@ install:
   - npm install
 
 script:
-  - npm start
+  - nodemon src/server.js
 
