@@ -1,10 +1,16 @@
 language: node_js
 
-node_js: 
-  -2.0.4
+node_js:
+  - 12
+  - 10
+  - 8
 
-before_script:
-  npm install
+node_js:
+  - stable
 
-script: 
+install:
+  - npm install
+
+script:
   - npm start
+
